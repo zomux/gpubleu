@@ -1,5 +1,6 @@
 # GPU-based BLEU Computation
 
+* Return percentage of BLEU
 * Based on Theano
 * Super fast for computing bleus in batch
 
@@ -15,4 +16,10 @@ sents = [
 ]
 ref = [[1, 2, 3, 4, 5, 7]]
 print (bleu.evaluate(sents, ref))
+```
+
+```
+[[ 0.58739489]
+ [ 0.31610978]
+ [ 0.23793663]]
 ```
