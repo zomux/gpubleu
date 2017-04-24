@@ -1,5 +1,6 @@
 # GPU-based BLEU Computation
 
+* Smoothed BLEU calculation (BLEU + 1)
 * Return percentage of BLEU
 * Based on Theano
 * Super fast for computing bleus in batch
