@@ -26,7 +26,7 @@ class GPUBLEUEvaluator(object):
         log_vals = [log1, log2, log3, log4]
         log_sum = sum([log_vals[i] * self.gram_weights[i] for i in range(4)])
         first_part = 1 - nr[None, :] / nx[:, None]
-        bleu_matrix = T.exp(T.lt(first_part, 0) * first_part + log_sum) * T.constant(10.)
+        bleu_matrix = T.exp(T.lt(first_part, 0) * first_part + log_sum)
         
         # Raw graph
         self._graph = theano.function([g, r, m1, m2, m3, m4, nx, nr], bleu_matrix)
