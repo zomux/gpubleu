@@ -1,9 +1,10 @@
-# GPU-based BLEU Computation
+# Super Fast GPU-based BLEU Computation
 
 * Smoothed BLEU calculation (BLEU + 1)
 * Return percentage of BLEU
 * Based on Theano
 * Super fast for computing bleus in batch
+* Reference: https://arxiv.org/abs/1704.03169
 
 ### Usage
 
